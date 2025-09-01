@@ -19,34 +19,34 @@ const Header: React.FC = () => {
     window.electronAPI.window.close();
   };
 
-  // Force black background with useEffect as a last resort
+  // Force red background with useEffect as a last resort
   useEffect(() => {
-    const forceBlackBackground = () => {
-      // Find all MUI AppBar elements and force them to be black
+    const forceRedBackground = () => {
+      // Find all MUI AppBar elements and force them to be red
       const appBars = document.querySelectorAll('.MuiAppBar-root');
       appBars.forEach((el: any) => {
-        el.style.backgroundColor = '#000000';
+        el.style.backgroundColor = '#DC143C';
         el.style.backgroundImage = 'none';
       });
       
       const toolbars = document.querySelectorAll('.MuiToolbar-root');
       toolbars.forEach((el: any) => {
-        el.style.backgroundColor = '#000000';
+        el.style.backgroundColor = '#DC143C';
         el.style.backgroundImage = 'none';
       });
     };
 
     // Run immediately and after a delay to catch any late renders
-    forceBlackBackground();
-    setTimeout(forceBlackBackground, 100);
-    setTimeout(forceBlackBackground, 500);
+    forceRedBackground();
+    setTimeout(forceRedBackground, 100);
+    setTimeout(forceRedBackground, 500);
   }, []);
 
   return (
     <div 
       className="MuiAppBar-root"
       style={{ 
-        backgroundColor: '#000000',
+        backgroundColor: '#DC143C',
         color: '#ffffff',
         padding: '8px 16px',
         display: 'flex',
@@ -58,20 +58,36 @@ const Header: React.FC = () => {
         boxSizing: 'border-box',
       }}
     >
-      <Typography 
-        variant="h6" 
-        component="div" 
+      <Box 
         style={{ 
           position: 'absolute', 
           left: '50%', 
           transform: 'translateX(-50%)', 
-          color: '#ffffff',
-          fontSize: '1.25rem',
-          fontWeight: 500,
+          display: 'flex',
+          alignItems: 'center',
+          gap: '8px',
         }}
       >
-        Azure Tenant Grapher
-      </Typography>
+        <img 
+          src="/river-plate-logo.svg" 
+          alt="River Plate" 
+          style={{ 
+            width: '24px', 
+            height: '24px' 
+          }} 
+        />
+        <Typography 
+          variant="h6" 
+          component="div" 
+          style={{ 
+            color: '#ffffff',
+            fontSize: '1.25rem',
+            fontWeight: 500,
+          }}
+        >
+          Azure Tenant Grapher
+        </Typography>
+      </Box>
       
       <Box 
         style={{ 

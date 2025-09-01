@@ -2,33 +2,33 @@ import { createTheme } from '@mui/material/styles';
 
 export const theme = createTheme({
   palette: {
-    mode: 'dark',
+    mode: 'light',
     primary: {
-      main: '#0078d4',
-      light: '#40a9ff',
-      dark: '#0050a0',
+      main: '#DC143C',
+      light: '#FF6B6B',
+      dark: '#B22222',
     },
     secondary: {
-      main: '#00bcf2',
-      light: '#50dfff',
-      dark: '#008cba',
+      main: '#8B0000',
+      light: '#FF4444',
+      dark: '#5C0000',
     },
     background: {
-      default: '#1e1e1e',
-      paper: '#2d2d30',
+      default: '#ffffff',
+      paper: '#f8f8f8',
     },
     text: {
-      primary: '#cccccc',
-      secondary: '#969696',
+      primary: '#333333',
+      secondary: '#666666',
     },
     error: {
-      main: '#f44336',
+      main: '#DC143C',
     },
     warning: {
       main: '#ff9800',
     },
     info: {
-      main: '#2196f3',
+      main: '#DC143C',
     },
     success: {
       main: '#4caf50',
@@ -100,17 +100,17 @@ export const theme = createTheme({
       },
       styleOverrides: {
         root: {
-          backgroundColor: '#000000 !important',
+          backgroundColor: '#DC143C !important',
           backgroundImage: 'none !important',
           color: '#ffffff !important',
         },
         colorDefault: {
-          backgroundColor: '#000000 !important',
+          backgroundColor: '#DC143C !important',
           backgroundImage: 'none !important',
           color: '#ffffff !important',
         },
         colorPrimary: {
-          backgroundColor: '#000000 !important',
+          backgroundColor: '#DC143C !important',
           backgroundImage: 'none !important',
         },
       },

@@ -8,24 +8,24 @@ body {
   font-family: 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1e1e1e;
-  color: #cccccc;
+  background-color: #ffffff;
+  color: #333333;
   overflow: hidden;
 }
 
-/* Force AppBar to be black */
+/* Force AppBar to be red */
 .MuiAppBar-root {
-  background-color: #000000 !important;
+  background-color: #DC143C !important;
   background-image: none !important;
 }
 
 .MuiAppBar-colorPrimary {
-  background-color: #000000 !important;
+  background-color: #DC143C !important;
   background-image: none !important;
 }
 
 .MuiToolbar-root {
-  background-color: #000000 !important;
+  background-color: #DC143C !important;
   background-image: none !important;
 }
 
@@ -41,11 +41,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #2d2d30;
+  background: #f0f0f0;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #555;
+  background: #DC143C;
   border-radius: 5px;
 }
 
@@ -125,25 +125,25 @@ body {
 }
 
 .xterm-viewport {
-  background-color: #1e1e1e !important;
+  background-color: #ffffff !important;
 }
 
 .xterm-screen {
-  background-color: #1e1e1e !important;
+  background-color: #ffffff !important;
 }
 
-/* vis-network navigation button styles - green on black theme */
+/* vis-network navigation button styles - red on white theme */
 .vis-navigation {
-  background-color: #000000 !important;
-  border: 1px solid #4caf50 !important;
+  background-color: #ffffff !important;
+  border: 1px solid #DC143C !important;
   border-radius: 4px !important;
 }
 
 .vis-button {
-  background-color: #000000 !important;
+  background-color: #ffffff !important;
   background-image: none !important;
-  border: 1px solid #4caf50 !important;
-  color: #4caf50 !important;
+  border: 1px solid #DC143C !important;
+  color: #DC143C !important;
   border-radius: 4px !important;
   margin: 2px !important;
   padding: 4px 8px !important;
@@ -151,56 +151,56 @@ body {
 }
 
 .vis-button:hover {
-  background-color: #000000 !important;
+  background-color: #ffffff !important;
   background-image: none !important;
-  border-color: #4caf50 !important;
-  color: #4caf50 !important;
+  border-color: #DC143C !important;
+  color: #DC143C !important;
   filter: brightness(1.2) !important;
-  box-shadow: 0 0 10px rgba(76, 175, 80, 0.5) !important;
+  box-shadow: 0 0 10px rgba(220, 20, 60, 0.5) !important;
 }
 
 .vis-button:active {
-  background-color: #000000 !important;
+  background-color: #ffffff !important;
   background-image: none !important;
-  border-color: #4caf50 !important;
-  color: #4caf50 !important;
+  border-color: #DC143C !important;
+  color: #DC143C !important;
   box-shadow: none !important;
 }
 
 /* Vis-network built-in zoom and navigation controls */
 .vis-zoomExtends, .vis-zoomIn, .vis-zoomOut,
 .vis-up, .vis-down, .vis-left, .vis-right {
-  background-color: #000000 !important;
+  background-color: #ffffff !important;
   background-image: none !important;
-  border: 1px solid #4caf50 !important;
-  color: #4caf50 !important;
-  fill: #4caf50 !important;
-  stroke: #4caf50 !important;
+  border: 1px solid #DC143C !important;
+  color: #DC143C !important;
+  fill: #DC143C !important;
+  stroke: #DC143C !important;
 }
 
 .vis-zoomExtends:hover, .vis-zoomIn:hover, .vis-zoomOut:hover,
 .vis-up:hover, .vis-down:hover, .vis-left:hover, .vis-right:hover {
-  background-color: #000000 !important;
+  background-color: #ffffff !important;
   background-image: none !important;
-  border-color: #4caf50 !important;
-  color: #4caf50 !important;
-  fill: #4caf50 !important;
-  stroke: #4caf50 !important;
+  border-color: #DC143C !important;
+  color: #DC143C !important;
+  fill: #DC143C !important;
+  stroke: #DC143C !important;
   filter: brightness(1.2) !important;
-  box-shadow: 0 0 10px rgba(76, 175, 80, 0.5) !important;
+  box-shadow: 0 0 10px rgba(220, 20, 60, 0.5) !important;
 }
 
 /* Override any SVG or Canvas styling in vis-network buttons */
 .vis-navigation .vis-button div {
   background-color: transparent !important;
   background-image: none !important;
-  border-color: #4caf50 !important;
+  border-color: #DC143C !important;
 }
 
 .vis-navigation .vis-button:before,
 .vis-navigation .vis-button:after {
-  background-color: #4caf50 !important;
-  border-color: #4caf50 !important;
+  background-color: #DC143C !important;
+  border-color: #DC143C !important;
 }
 
 /* Force icon colors in navigation buttons */
@@ -211,7 +211,7 @@ body {
 .vis-navigation .vis-button.vis-zoomIn:after,
 .vis-navigation .vis-button.vis-zoomOut:after,
 .vis-navigation .vis-button.vis-zoomExtends:after {
-  border-color: #4caf50 !important;
+  border-color: #DC143C !important;
   background-color: transparent !important;
 }
 
@@ -221,7 +221,7 @@ body {
 }
 .vis-navigation .vis-button.vis-up:after {
   content: '▲';
-  color: #4caf50 !important;
+  color: #DC143C !important;
   font-size: 16px;
   position: absolute;
   top: 50%;
@@ -234,7 +234,7 @@ body {
 }
 .vis-navigation .vis-button.vis-down:after {
   content: '▼';
-  color: #4caf50 !important;
+  color: #DC143C !important;
   font-size: 16px;
   position: absolute;
   top: 50%;
@@ -247,7 +247,7 @@ body {
 }
 .vis-navigation .vis-button.vis-left:after {
   content: '◀';
-  color: #4caf50 !important;
+  color: #DC143C !important;
   font-size: 16px;
   position: absolute;
   top: 50%;
@@ -260,7 +260,7 @@ body {
 }
 .vis-navigation .vis-button.vis-right:after {
   content: '▶';
-  color: #4caf50 !important;
+  color: #DC143C !important;
   font-size: 16px;
   position: absolute;
   top: 50%;
@@ -273,7 +273,7 @@ body {
 }
 .vis-navigation .vis-button.vis-zoomIn:after {
   content: '+';
-  color: #4caf50 !important;
+  color: #DC143C !important;
   font-size: 20px;
   font-weight: bold;
   position: absolute;
@@ -287,7 +287,7 @@ body {
 }
 .vis-navigation .vis-button.vis-zoomOut:after {
   content: '−';
-  color: #4caf50 !important;
+  color: #DC143C !important;
   font-size: 20px;
   font-weight: bold;
   position: absolute;
@@ -301,7 +301,7 @@ body {
 }
 .vis-navigation .vis-button.vis-zoomExtends:after {
   content: '⊡';
-  color: #4caf50 !important;
+  color: #DC143C !important;
   font-size: 18px;
   position: absolute;
   top: 50%;
