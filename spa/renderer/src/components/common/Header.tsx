@@ -58,20 +58,36 @@ const Header: React.FC = () => {
         boxSizing: 'border-box',
       }}
     >
-      <Typography 
-        variant="h6" 
-        component="div" 
+      <Box 
         style={{ 
           position: 'absolute', 
           left: '50%', 
           transform: 'translateX(-50%)', 
-          color: '#ffffff',
-          fontSize: '1.25rem',
-          fontWeight: 500,
+          display: 'flex',
+          alignItems: 'center',
+          gap: '8px',
         }}
       >
-        Azure Tenant Grapher
-      </Typography>
+        <img 
+          src="/river-plate-logo.svg" 
+          alt="River Plate" 
+          style={{ 
+            width: '24px', 
+            height: '24px' 
+          }} 
+        />
+        <Typography 
+          variant="h6" 
+          component="div" 
+          style={{ 
+            color: '#ffffff',
+            fontSize: '1.25rem',
+            fontWeight: 500,
+          }}
+        >
+          Azure Tenant Grapher
+        </Typography>
+      </Box>
       
       <Box 
         style={{ 
